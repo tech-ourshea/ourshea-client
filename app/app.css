@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "montserrat", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-primary-900: #00a652;
+  --color-primary-700: #00cc66;
+  --color-primary-600: #00e070;
+  --color-primary-500: #1fff8f;
+  --color-primary-300: #adffd6;
+  --color-primary-200: #c2ffe0;
+  --color-primary-100: #ebfff5;
+
+  --color-gold-900: #c79717;
+  --color-gold-700: #e5b224;
+  --color-gold-600: #eabf48;
+  --color-gold-500: #eecb6d;
+  --color-gold-300: #f2d891;
+  --color-gold-200: #f6e5b6;
+  --color-gold-100: #fbf2da;
+
+  --color-grey-900: #5e615c;
+  --color-grey-500: #cbcecc;
+  --color-grey-300: #d9d9d9;
+  --color-grey-200: #f0f4f2;
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950 font-montserrat;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  p {
+    @apply font-normal text-xl;
+  }
+
+  h1 {
+    @apply font-[600] text-4xl;
+  }
+
+  h2 {
+    @apply font-bold text-3xl;
+  }
+
+  h3 {
+    @apply font-bold text-2xl;
+  }
+
+  h4 {
+    @apply font-[600] text-2xl;
+  }
+}

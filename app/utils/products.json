@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Handcrafted Soaps",
+    "slug": "handcrafted-soaps",
+    "url": "/products/handcrafted-soaps",
+    "images": {
+      "small": "/images/products/handcrafted-soap/small.png",
+      "medium": "",
+      "large": "/images/products/handcrafted-soap/large.png",
+      "banner": "/images/products/banners/handcrafted-soap.png"
+    },
+    "details": [
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter. Based in northern Ghana and in partnership with the Bongo Soe Shea Butter Women Group, we process shea butter for local and international markets—creating jobs, supporting women, and protecting the environment.",
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter.",
+      "Our product line includes handcrafted soaps, bulk shea butter for cosmetic companies, and sustainable fuel—all produced with environmental and social responsibility at heart."
+    ],
+    "productInformation": {
+      "Product Name": "Handcrafted Soaps",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Bulk Shea Butter",
+    "url": "/products/shea-butter",
+    "slug": "shea-butter",
+    "images": {
+      "small": "/images/products/shea-butter/small.png",
+      "medium": "",
+      "large": "/images/products/shea-butter/large.png",
+      "banner": "/images/products/banners/shea-butter.png"
+    },
+    "details": [
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter. Based in northern Ghana and in partnership with the Bongo Soe Shea Butter Women Group, we process shea butter for local and international markets—creating jobs, supporting women, and protecting the environment.",
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter.",
+      "Our product line includes handcrafted soaps, bulk shea butter for cosmetic companies, and smokeless charcoal—all produced with environmental and social responsibility at heart."
+    ],
+    "productInformation": {
+      "Product Name": "Bulk Shea Butter",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  },
+  {
+    "name": "Smokeless Charcoal",
+    "slug": "smokeless-charcoal",
+    "url": "/products/smokeless-charcoal",
+    "images": {
+      "small": "/images/products/smokeless-charcoal/small.png",
+      "medium": "",
+      "large": "/images/products/smokeless-charcoal/large.png",
+      "banner": "/images/products/banners/smokeless-charcoal.png"
+    },
+    "details": [
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter. Based in northern Ghana and in partnership with the Bongo Soe Shea Butter Women Group, we process shea butter for local and international markets—creating jobs, supporting women, and protecting the environment.",
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter.",
+      "Our product line includes handcrafted soaps, Smokeless Charcoal for cosmetic companies, and smokeless charcoal—all produced with environmental and social responsibility at heart."
+    ],
+    "productInformation": {
+      "Product Name": "Smokeless Charcoal",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  }
+]
