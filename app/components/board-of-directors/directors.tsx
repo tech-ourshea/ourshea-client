@@ -3,7 +3,7 @@ import React from "react";
 const Directors = () => {
   return (
     <>
-      <div className="relative w-full h-62">
+      <div className="relative mt-7 w-full h-62">
         <img
           src="/images/our-team/hero.png"
           alt="ourshea women making shea butter"

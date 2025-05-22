@@ -1,9 +1,7 @@
-import React from "react";
-
 const Contacts = () => {
   return (
     <>
-      <div className="relative w-full h-62">
+      <div className="relative mt-7 w-full h-62">
         <img
           src="/images/gallery/hero.png"
           alt="ourshea women making shea butter"
@@ -14,7 +12,7 @@ const Contacts = () => {
         </div>
       </div>
 
-      <div className="flex justify-between gap-58 mx-20 my-20">
+      <div className="flex justify-center gap-58 mx-20 my-20">
         <div>
           <h1 className="max-w-76 text-6xl">Let’s Get in touch</h1>
           <p className="mt-10 font-[600]">We are Just call away from you!!</p>

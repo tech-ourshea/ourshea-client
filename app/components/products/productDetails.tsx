@@ -8,7 +8,7 @@ const ProductDetails = ({ product }: Props) => {
 
   return (
     <div>
-      <div className="relative w-full h-62">
+      <div className="relative mt-7 w-full h-62">
         <img
           src={product.images.banner}
           alt="ourshea women making shea butter"

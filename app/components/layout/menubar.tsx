@@ -1,5 +1,5 @@
 import Logo from "public/logo";
-import { NavLink, type NavLinkRenderProps } from "react-router";
+import { Link, NavLink, type NavLinkRenderProps } from "react-router";
 import { IconChevronDown } from "../ui/icons/chevron-down";
 import { useState } from "react";
 import products from "../../utils/products.json";
@@ -51,7 +51,9 @@ const productsDropdownData: DropDownProps = {
 const Menubar = () => {
   return (
     <div className="flex justify-between items-center px-20 pt-4">
-      <Logo />
+      <Link to={"/"}>
+        <Logo />
+      </Link>
       <nav className="flex items-center gap-8">
         <NavItem to="">Home</NavItem>
         <DropDown {...aboutUsDropdownData} />

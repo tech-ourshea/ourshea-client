@@ -1,6 +1,5 @@
 import Logo from "public/logo";
 import { NavLink } from "react-router";
-import TagLine from "~/components/layout/tag-line";
 import IconFacebook from "~/components/ui/icons/icon-facebook";
 import IconInstagram from "~/components/ui/icons/icon-instagram";
 import IconLinkedin from "~/components/ui/icons/icon-linkedin";
@@ -10,9 +9,9 @@ const Footer = () => {
   return (
     <>
       <footer className="mb-10 px-52 pb-2 border-b-[1px]">
-        <ul className="justify-between grid grid-cols-3">
+        <ul className="justify-center gap-24 grid grid-cols-[410px_202px_202px]">
           <li>
-            <Logo />
+            <Logo className="w-40 h-23" />
             <p className="mt-6 max-w-[400px]">
               We create jobs, support women, and protect the environment
             </p>

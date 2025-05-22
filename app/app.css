@@ -26,6 +26,17 @@
   --color-grey-500: #cbcecc;
   --color-grey-300: #d9d9d9;
   --color-grey-200: #f0f4f2;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 html,
@@ -57,4 +68,5 @@ body {
   h4 {
     @apply font-[600] text-2xl;
   }
+
 }

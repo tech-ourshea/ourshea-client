@@ -1,11 +1,24 @@
 import React from "react";
 
 const TagLine = () => {
+  const getTags = () => {
+    let tags = [];
+    for (let i = 0; i < 100; i++) {
+      tags.push(
+        <p key={i} className="mx-2 w-[210px] text-white whitespace-nowrap">
+          Beyond Profits!!!
+        </p>
+      );
+    }
+    return tags;
+  };
+
   return (
-    <div className="flex justify-between bg-gold-900 mt-20 mb-40 px-20 py-4 font-light text-white italic">
-      <p>Beyond Profits!!!</p>
-      <p>Beyond Profits!!!</p>
-      <p>Beyond Profits!!!</p>
+    <div className="bg-gold-900 mt-20 mb-40 px-0 py-4 overflow-hidden font-light text-white italic">
+      <div className="flex flex-nowrap gap-20 animate-marquee">
+        {getTags()}
+        {getTags() /* Duplicate for infinite loop effect */}
+      </div>
     </div>
   );
 };

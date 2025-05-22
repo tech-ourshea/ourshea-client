@@ -2,12 +2,14 @@ import React from "react";
 const Testimonials = () => {
   return (
     <div className="p-20">
-      <h4>
+      <h4 className="text-center">
         What <span className="text-primary-900">Our Clients</span> Say
       </h4>
-      <p>Hear directly from our satisfied partners</p>
+      <p className="mt-4 text-center">
+        Hear directly from our satisfied partners
+      </p>
 
-      <ul className="flex items-center gap-50 mt-16">
+      <ul className="flex justify-center items-center gap-50 mt-16">
         {testimonials.map((test, indx) => {
           return (
             <li key={indx} className="">
