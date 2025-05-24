@@ -40,7 +40,6 @@ const certificates = [
 const Certifications = () => {
   const [showingAll, setShowingAll] = useState<boolean>(false);
   const showing = showingAll ? certificates : certificates.slice(0, 4);
-  console.log("Showing: ", showing);
   return (
     <section className="px-20 pb-10">
       <h4 className="text-primary-900 text-center">Our Certifications</h4>

@@ -13,8 +13,8 @@ const SDGs = () => {
     <section className="p-20">
       <p className="mx-auto max-w-320 font-[600] text-center">
         Our operations support the Sustainable Development Goals 1, 2, 5, 8, 10,
-        and 13. We believe in gender equality, climate action, and responsible
-        production
+        and 13. We believe in addressing some of the Sustainable Development
+        Goals (SDGs)
       </p>
       <ul className="justify-center gap-x-12.5 gap-y-6 grid grid-cols-[210px_210px_210px] mt-10">
         {sdgs.map((sdg, indx) => {

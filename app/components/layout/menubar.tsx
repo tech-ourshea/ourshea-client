@@ -96,7 +96,7 @@ const DropDown = (props: DropDownProps) => {
                 key={indx}
                 border={false}
                 to={option.to}
-                className="border-b-0 hover:border-b-0 hover:text-primary-900"
+                className="border-b-0 hover:border-b-0 hover:font-bold hover:text-primary-1000"
               >
                 {option.name}
               </NavItem>

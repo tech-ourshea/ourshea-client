@@ -16,8 +16,8 @@ const Teams = () => {
       <div>
         <h4 className="mt-25 text-primary-900 text-center">Meet our Team</h4>
         <p className="mt-2.5 text-center">
-          With diverse backgrounds we are a strong team towards building the
-          vision of OurShea
+          With diverse backgrounds we are a strong team building the vision of
+          OurShea
         </p>
 
         <div className="flex flex-col items-center mt-10">

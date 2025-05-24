@@ -21,11 +21,11 @@ const Hero = () => {
 
         <div className="z-20 absolute mt-47 w-full text-white text-center">
           <h1 className="m-auto max-w-218.25">
-            We are an Eco-conscious producer of premium organic shea butter.
+            We are an eco-conscious producer of premium organic shea butter.
           </h1>
           <p className="m-auto mt-7 max-w-183">
             From traditional methods to innovative agile practices, we blend
-            heritage and technology to meet global demand.
+            heritage and technology to meet global demands of shea butter.
           </p>
         </div>
 

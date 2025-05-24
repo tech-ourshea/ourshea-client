@@ -62,7 +62,7 @@ const values = [
     title: "Sustainability",
     icon: "/images/core-values/sustainability.png",
     description:
-      "We are committed to protecting the environment through eco-friendly practices, renewable energy use, and zero-waste production—including converting shea waste into clean fuel",
+      "We are committed to protecting the environment through eco-friendly practices, renewable energy use, and zero-waste production—including converting shea waste into clean fuel.",
   },
 
   {
@@ -76,7 +76,7 @@ const values = [
     title: "Innovation",
     icon: "/images/core-values/innovation.png",
     description:
-      "We blend tradition with modern technology, gradually transitioning to solar-powered machinery and product diversification, to drive sustainable growth",
+      "We blend tradition with modern technology, gradually transitioning to solar-powered machinery and product diversification, to drive sustainable growth.",
   },
   {
     title: "Community",

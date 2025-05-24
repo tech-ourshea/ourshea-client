@@ -1,0 +1,189 @@
+[
+  {
+    "name": "Bulk Shea Butter",
+    "url": "/products/shea-butter",
+    "slug": "shea-butter",
+    "images": {
+      "small": "/images/products/shea-butter/small.png",
+      "medium": "",
+      "large": "/images/products/shea-butter/large.png",
+      "banner": "/images/products/banners/shea-butter.png"
+    },
+    "details": [
+      "Our Premium Organic Shea Butter is a rich, nutrient-dense moisturizer sourced directly from the nuts of the Vitellaria paradoxa tree, native to West Africa. Handcrafted by women's cooperatives using traditional methods and machinery, this unrefined shea butter retains all its natural healing and hydrating properties. It is 100% pure, raw, certified organic, ideal for sensitive skin, hair care, and natural DIY cosmetics."
+    ],
+    "features": [
+      {
+        "100% Organic & Unrefined": "No additives, preservatives, or chemicals.",
+        "Fair Trade Sourced": "Ethically harvested and produced by women's cooperatives in northern Ghana.",
+        "Cold-Pressed": "Maintains maximum potency of vitamins and fatty acids.",
+        "Multi-Use": "Ideal for skin care, hair treatment, stretch mark prevention, baby care, and natural formulations.",
+        "Rich in Nutrients": "Contains vitamins A, E, and F, as well as essential fatty acids that nourish and protect."
+      }
+    ],
+    "benefits": [
+      "Deeply moisturizes dry and cracked skin",
+      "Soothes eczema, dermatitis, and psoriasis",
+      "Promotes skin elasticity and reduces the appearance of stretch marks",
+      "Strengthens and softens hair, reducing frizz and breakage",
+      "Acts as a natural anti-inflammatory and sunscreen (SPF ~6)"
+    ],
+    "ingredients": ["100% Butyrospermum parkii (Shea) Butter"],
+    "Product Specifications": [
+      {
+        "Texture": "Smooth and creamy at body temperature; solid at room temperature"
+      },
+      { "Color": "Ivory to light yellow (varies by batch)" },
+      { "Scent": "Nutty, earthy aroma (natural, unrefined)" },
+      { "Shelf Life": "12–24 months" },
+      { "Storage": "Keep in a cool, dry place away from sunlight" }
+    ],
+
+    "productInformation": {
+      "Product Name": "Bulk Shea Butter",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Bulk Shea Nuts",
+    "url": "/products/shea-nuts",
+    "slug": "shea-nuts",
+    "images": {
+      "small": "/images/products/shea-butter/small.png",
+      "medium": "",
+      "large": "/images/products/shea-butter/large.png",
+      "banner": "/images/products/banners/shea-butter.png"
+    },
+    "details": [
+      "OurShea Ghana’s Premium Shea Nuts are handpicked from wild shea trees by women’s cooperatives in the Upper East Region of Ghana. Carefully sun-dried and naturally cleaned, these nuts are ideal for high-yield shea butter extraction and meet strict international standards for cosmetic and food use."
+    ],
+    "features": [
+      {
+        "100% Organic & Unrefined": "No additives, preservatives, or chemicals.",
+        "Fair Trade Sourced": "Ethically harvested and produced by women's cooperatives in northern Ghana.",
+        "Cold-Pressed": "Maintains maximum potency of vitamins and fatty acids.",
+        "Multi-Use": "Ideal for skin care, hair treatment, stretch mark prevention, baby care, and natural formulations.",
+        "Rich in Nutrients": "Contains vitamins A, E, and F, as well as essential fatty acids that nourish and protect."
+      }
+    ],
+    "benefits": [
+      "Deeply moisturizes dry and cracked skin",
+      "Soothes eczema, dermatitis, and psoriasis",
+      "Promotes skin elasticity and reduces the appearance of stretch marks",
+      "Strengthens and softens hair, reducing frizz and breakage",
+      "Acts as a natural anti-inflammatory and sunscreen (SPF ~6)"
+    ],
+    "ingredients": ["100% Butyrospermum parkii (Shea) Butter"],
+    "Product Specifications": [
+      {
+        "Texture": "Smooth and creamy at body temperature; solid at room temperature"
+      },
+      { "Color": "Ivory to light yellow (varies by batch)" },
+      { "Scent": "Nutty, earthy aroma (natural, unrefined)" },
+      { "Shelf Life": "12–24 months" },
+      { "Storage": "Keep in a cool, dry place away from sunlight" }
+    ],
+
+    "productInformation": {
+      "Product Name": "Bulk Shea Nuts",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Handcrafted Soaps",
+    "slug": "handcrafted-soaps",
+    "url": "/products/handcrafted-soaps",
+    "images": {
+      "small": "/images/products/handcrafted-soap/small.png",
+      "medium": "",
+      "large": "/images/products/handcrafted-soap/large.png",
+      "banner": "/images/products/banners/handcrafted-soap.png"
+    },
+    "details": [
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter. Based in northern Ghana and in partnership with the Bongo Soe Shea Butter Women Group, we process shea butter for local and international markets—creating jobs, supporting women, and protecting the environment.",
+      "Our product line includes handcrafted soaps, bulk shea butter for cosmetic companies, and smokeless charcoal—all produced with environmental and social responsibility at heart."
+    ],
+    "productInformation": {
+      "Product Name": "Handcrafted Soaps",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Smokeless Charcoal",
+    "slug": "smokeless-charcoal",
+    "url": "/products/smokeless-charcoal",
+    "images": {
+      "small": "/images/products/smokeless-charcoal/small.png",
+      "medium": "",
+      "large": "/images/products/smokeless-charcoal/large.png",
+      "banner": "/images/products/banners/smokeless-charcoal.png"
+    },
+    "details": [
+      "Rooted in generations of shea butter craftsmanship, OurShea was founded in 2024 as an eco-conscious producer of premium organic shea butter. Based in northern Ghana and in partnership with the Bongo Soe Shea Butter Women Group, we process shea butter for local and international markets—creating jobs, supporting women, and protecting the environment.",
+      "Our product line includes handcrafted soaps, Smokeless Charcoal for cosmetic companies, and smokeless charcoal—all produced with environmental and social responsibility at heart."
+    ],
+    "productInformation": {
+      "Product Name": "Smokeless Charcoal",
+      "INCI Name": "Lorem Ipsum has been",
+      "CAS Number": "91080-23-8",
+      "EINECS Number": "0000000",
+      "REACH": "Lorem Ipsum has been the industry's",
+      "Shelf Life": "Lorem Ipsum has been the industry's"
+    },
+    "partners": [
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_1.png"
+      },
+      {
+        "name": "",
+        "logo": "/images/products/handcrafted-soap/soap-partners/partner_2.png"
+      }
+    ]
+  }
+]

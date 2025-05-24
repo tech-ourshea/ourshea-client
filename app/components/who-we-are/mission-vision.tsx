@@ -14,8 +14,8 @@ const MissionVision = () => {
       <div className="mt-8">
         <h3>Our Vision</h3>
         <p className="mt-5">
-          To lead a global shift toward ethical shea production, empowering
-          communities and protecting the planet.
+          To lead a global shift toward ethical shea butter production,
+          empowering communities and protecting the planet.
         </p>
       </div>
     </section>

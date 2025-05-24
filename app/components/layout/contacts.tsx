@@ -4,6 +4,7 @@ import IconInstagram from "~/components/ui/icons/icon-instagram";
 import IconLinkedin from "~/components/ui/icons/icon-linkedin";
 import IconWhatsapp from "~/components/ui/icons/icon-whatsapp";
 import IconYoutube from "~/components/ui/icons/icon-youtube";
+import { EMAIL } from "~/utils/general";
 
 const ContactsBanner = () => {
   return (
@@ -22,10 +23,10 @@ const ContactsBanner = () => {
           </li>
           <li className="bg-primary-900 w-[0.5px]"></li>
           <li>
-            <a href="mailto:oursheaghltd@gmail.com">oursheaghltd@gmail.com</a>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </li>
           <li className="bg-primary-900 w-[0.5px]"></li>
-          <li>Mon - Sun: 8:00 - 7:30</li>
+          <li>Mon – Sat: 8:00 am – 5:00 pm GMT</li>
         </ul>
         <ul className="flex items-center gap-5">
           <a

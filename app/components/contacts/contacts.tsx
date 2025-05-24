@@ -1,3 +1,5 @@
+import { EMAIL } from "~/utils/general";
+
 const Contacts = () => {
   return (
     <>
@@ -22,7 +24,7 @@ const Contacts = () => {
           </p>
           <p className="mt-8">Email</p>
           <p className="mt-2">
-            <strong>oursheaghltd@gmail.com</strong>
+            <strong>{EMAIL}</strong>
           </p>
           <p className="mt-8">Office Address</p>
           <p className="mt-2">

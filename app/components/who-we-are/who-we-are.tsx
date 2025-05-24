@@ -42,7 +42,7 @@ const WhoWeAre = () => {
             </p>
             <p className="mt-4">
               Our product line includes handcrafted soaps, bulk shea butter for
-              cosmetic companies, and sustainable fuel—all produced with
+              cosmetic companies, and smokeless charcoal—all produced with
               environmental and social responsibility at heart.
             </p>
           </div>
