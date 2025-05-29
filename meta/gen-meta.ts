@@ -30,8 +30,8 @@ export function generateMeta({
   path,
   imageName,
 }: SocialMetaArgs) {
-  const fullUrl = `https://ourshea.com${path}`;
-  const imageUrl = `https://ourshea.com/meta/${imageName}`;
+  const fullUrl = `https://ourshea.vercel.app/${path}`;
+  const imageUrl = `https://ourshea.vercel.app/meta/${imageName}`;
 
   return [
     { title: pageTitle },

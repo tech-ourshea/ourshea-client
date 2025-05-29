@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Avoid indexing parameter-based duplicates
+Disallow: /*?ref=
+Disallow: /*?utm_
+
+# Sitemap location
+Sitemap: https://ourshea.vercel.app/sitemap.xml
