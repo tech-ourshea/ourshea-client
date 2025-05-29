@@ -30,6 +30,27 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1",
+    },
+    {
+      name: "theme-color",
+      content: "#ffffff",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      name: "author",
+      content: "Louis Marie Atoluko Ayariga",
+    },
+  ];
+};
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

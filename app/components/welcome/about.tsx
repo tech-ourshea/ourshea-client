@@ -20,7 +20,7 @@ const About = () => {
         </p>
         <Link
           className="mt-9 font-medium text-primary-900 text-right"
-          to="/about/who-we-are"
+          to="/about-us/who-we-are"
         >
           Read More
         </Link>

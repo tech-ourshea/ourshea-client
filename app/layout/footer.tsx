@@ -4,6 +4,7 @@ import IconFacebook from "~/components/ui/icons/icon-facebook";
 import IconInstagram from "~/components/ui/icons/icon-instagram";
 import IconLinkedin from "~/components/ui/icons/icon-linkedin";
 import IconYoutube from "~/components/ui/icons/icon-youtube";
+import Products from "../utils/products.json";
 
 const Footer = () => {
   return (
@@ -87,10 +88,9 @@ const quickLinks: LinkGroupOption[] = [
   { to: "/contact-us", name: "Contact Us" },
 ];
 
-const productsLinks: LinkGroupOption[] = [
-  { to: "/products/handcrafted-soap", name: "Handcrafted Soap" },
-  { to: "/products/bulk-shea-butter", name: "Bulk Shea Butter" },
-  { to: "/products/smokeless-charcoal", name: "Smokeless Charcoal" },
-];
+const productsLinks: LinkGroupOption[] = Products.map((prod) => {
+  return { name: prod.name, to: prod.url };
+});
+
 
 export default Footer;

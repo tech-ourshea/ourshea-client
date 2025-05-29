@@ -1,5 +1,6 @@
 import { Welcome } from "~/components/welcome/welcome";
 import type { Route } from "./+types/home";
+import { generateMeta } from "meta/gen-meta";
 
 // <meta name="description" content={description} />
 // <link rel="canonical" href={`https://yourdomain.com${location.pathname}`} />
@@ -27,74 +28,13 @@ export const links: Route.LinksFunction = () => [
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "OurShea - Home" },
-
-    {
-      name: "description",
-      content:
-        "We are an Eco-conscious producer of premium organic shea butter",
-    },
-    {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1",
-    },
-    {
-      name: "theme-color",
-      content: "#ffffff",
-    },
-    {
-      name: "robots",
-      content: "index, follow",
-    },
-    {
-      name: "author",
-      content: "OurShea Team",
-    },
-
-    { name: "og:title", content: "OurShea - Home" },
-    {
-      name: "og:description",
-      content:
-        "We are an Eco-conscious producer of premium organic shea butter",
-    },
-    {
-      name: "og:type",
-      content: "website",
-    },
-    {
-      name: "og:url",
-      content: "https://ourshea.com",
-    },
-    {
-      name: "og:image",
-      content: "https://ourshea.com/images/og-image.png",
-    },
-    {
-      name: "og:site_name",
-      content: "OurShea",
-    },
-
-    {
-      name: "twitter:card",
-      content: "summary_large_image",
-    },
-    {
-      name: "twitter:title",
-      content: "OurShea - Home",
-    },
-    {
-      name: "twitter:description",
-      content:
-        "We are an Eco-conscious producer of premium organic shea butter",
-    },
-    {
-      name: "twitter:image",
-      content: "https://ourshea.com/images/twitter-image.png",
-    },
-    {
-      name: "twitter:creator",
-      content: "@oursheaeco",
-    },
+    ...generateMeta({
+      pageTitle: "OurShea - Home",
+      description:
+        "We are an Eco-conscious producer of premium organic shea butter.",
+      path: "/",
+      imageName: "home.png",
+    }),
   ];
 }
 

@@ -40,34 +40,42 @@ const ContactsBanner = () => {
           </li>
         </ul>
         <ul className="flex items-center gap-1 lg:gap-5">
-          <a
-            className="opacity-30"
-            href="http://www.facebook.com"
-            target="_blanc"
-          >
-            <IconFacebook className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
-          </a>
-          <a
-            className="opacity-30"
-            href="http://www.linkedin.com"
-            target="_blanc"
-          >
-            <IconLinkedin className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
-          </a>
-          <a
-            className="opacity-30"
-            href="http://www.instagram.com"
-            target="_blanc"
-          >
-            <IconInstagram className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
-          </a>
-          <a
-            className="opacity-30"
-            href="http://www.youtube.com"
-            target="_blanc"
-          >
-            <IconYoutube className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
-          </a>
+          <li>
+            <a
+              className="opacity-30"
+              href="http://www.facebook.com"
+              target="_blanc"
+            >
+              <IconFacebook className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="opacity-30"
+              href="http://www.linkedin.com"
+              target="_blanc"
+            >
+              <IconLinkedin className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="opacity-30"
+              href="http://www.instagram.com"
+              target="_blanc"
+            >
+              <IconInstagram className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="opacity-30"
+              href="http://www.youtube.com"
+              target="_blanc"
+            >
+              <IconYoutube className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -2,6 +2,19 @@ import { Link } from "react-router";
 import { ArrowRight } from "~/components/ui/icons/icon-arrow-right";
 import Footer from "~/layout/footer";
 import Header from "~/layout/header";
+import type { Route } from "../+types/root";
+import { generateMeta } from "meta/gen-meta";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    ...generateMeta({
+      pageTitle: "OurShea - 404",
+      description: "Page not found.",
+      path: "/404",
+      imageName: "404.png",
+    }),
+  ];
+}
 
 const PageNotFound = () => {
   return (

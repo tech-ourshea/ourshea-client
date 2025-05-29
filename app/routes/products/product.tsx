@@ -3,6 +3,23 @@ import products from "../../utils/products.json";
 import ProductDetails from "~/components/products/productDetails";
 import type { ProductType } from "types";
 import { Link } from "react-router";
+import { generateMeta } from "meta/gen-meta";
+
+export function meta({ params }: Route.MetaArgs) {
+  let name;
+  const product = products.find((prod) => prod.slug === params.slug);
+  if (!product) name = "products";
+  name = product?.name;
+  return [
+    ...generateMeta({
+      pageTitle: `OurShea - ${name}`,
+      description:
+        "Meet the passionate individuals behind OurShea’s mission and impact.",
+      path: "/team",
+      imageName: "team.png",
+    }),
+  ];
+}
 
 export function loader({ params }: Route.LoaderArgs) {
   const product = products.find((prod) => prod.slug === params.slug);

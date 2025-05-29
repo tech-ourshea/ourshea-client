@@ -7,6 +7,7 @@ const Logo = (props: SVGProps<SVGSVGElement>) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="w-23 h-13"
       {...props}
     >
       <rect width="93.2407" height="53" fill="url(#pattern0_153_345)" />

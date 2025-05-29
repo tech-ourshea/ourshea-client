@@ -20,7 +20,9 @@ const ProductDetails = ({ product }: Props) => {
       </div>
       <div className="px-5.5 md:px-20 pt-25 pb-20">
         <div className="mx-auto w-fit">
-          <h4 className="mb-10 lg:mb-0 text-primary-900 text-center">{`The Idea behind ${product.name}`}</h4>
+          <h4 className="mb-10 lg:mb-0 text-primary-900 text-center">
+            {product.name}
+          </h4>
           <div className="flex flex-col md:flex-wrap justify-center items-center gap-9">
             <img src={product.images.large} alt={`ourshea ${product.name}`} />
             <div className="max-w-159">

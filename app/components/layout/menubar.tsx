@@ -65,7 +65,7 @@ const Menubar = () => {
       </div>
       <div className="hidden md:flex justify-between items-center px-20 pt-4">
         <Link to={"/"}>
-          <Logo />
+          <Logo className="w-23 h-13" />
         </Link>
         <nav className="flex gap-8">
           <NavItem to="">Home</NavItem>
@@ -89,7 +89,7 @@ interface DropDownProps {
   to: string;
   options: { name: string; to: string }[];
   onClose?: () => void;
-}
+};
 
 const MobileDropdown = (props: DropDownProps) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
