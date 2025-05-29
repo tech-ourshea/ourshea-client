@@ -20,8 +20,8 @@ const Teams = () => {
           OurShea
         </p>
 
-        <div className="flex flex-col items-center mt-10">
-          <ul className="flex gap-25">
+        <div className="flex flex-col items-center mt-10 px-5.5">
+          <ul className="flex flex-wrap justify-center items-center gap-25">
             {teamMembers.slice(0, 4).map((member, indx) => {
               return (
                 <li key={indx} className="relative h-70.5">
@@ -39,7 +39,7 @@ const Teams = () => {
             })}
           </ul>
 
-          <ul className="flex gap-25 mt-25">
+          <ul className="flex flex-wrap justify-center gap-25 mt-25">
             {teamMembers.slice(4, 7).map((member, indx) => {
               return (
                 <li key={indx} className="relative h-70.5">

@@ -46,7 +46,7 @@ const Certifications = () => {
       <p className="text-center">
         See below our certifcations and product infomation
       </p>
-      <ul className="justify-center gap-15 grid grid-cols-[repeat(4,193px)] mt-10">
+      <ul className="flex flex-wrap justify-center items-center gap-15 mt-10">
         {showing.map((cert, indx) => {
           return (
             <li key={indx} className="flex flex-col">

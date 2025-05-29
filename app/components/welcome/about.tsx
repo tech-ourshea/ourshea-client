@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const About = () => {
   return (
-    <section className="flex justify-center gap-5 p-20">
+    <section className="flex md:flex-row flex-col justify-center gap-5 md:p-20 px-5.5 py-7.5">
       <img
         className=""
         src="images/who-we-are.png"

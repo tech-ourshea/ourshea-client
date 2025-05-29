@@ -10,16 +10,16 @@ const sdgs = [
 ];
 const SDGs = () => {
   return (
-    <section className="p-20">
+    <section className="p-5.5 lg:p-20">
       <p className="mx-auto max-w-320 font-[600] text-center">
         Our operations support the Sustainable Development Goals 1, 2, 5, 8, 10,
         and 13. We believe in addressing some of the Sustainable Development
         Goals (SDGs)
       </p>
-      <ul className="justify-center gap-x-12.5 gap-y-6 grid grid-cols-[210px_210px_210px] mt-10">
+      <ul className="flex flex-wrap justify-center items-center gap-x-12.5 gap-y-6 mt-10">
         {sdgs.map((sdg, indx) => {
           return (
-            <li key={indx} className="bg-red-600">
+            <li key={indx} className="">
               <img src={sdg} alt="ourshea sdg" />
             </li>
           );

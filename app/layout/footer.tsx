@@ -7,51 +7,49 @@ import IconYoutube from "~/components/ui/icons/icon-youtube";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="mb-10 px-52 pb-2 border-b-[1px]">
-        <ul className="justify-center gap-24 grid grid-cols-[410px_202px_202px]">
-          <li>
-            <Logo className="w-40 h-23" />
-            <p className="mt-6 max-w-[400px]">
-              We create jobs, support women, and protect the environment
-            </p>
-            <nav className="flex gap-5 mt-5">
-              <NavLink
-                to="http://www.facebook.com"
-                className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-              >
-                <IconFacebook />
-              </NavLink>
-              <NavLink
-                to="http://www.linkedin.com"
-                className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-              >
-                <IconLinkedin />
-              </NavLink>
-              <NavLink
-                to="http://www.instagram.com"
-                className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-              >
-                <IconInstagram />
-              </NavLink>
-              <NavLink
-                to="http://www.youtube.com"
-                className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-              >
-                <IconYoutube />
-              </NavLink>
-            </nav>
-          </li>
+    <footer className="lg:block flex flex-col items-center mb-10 px-16 lg:px-52 pb-2 border-b-[1px]">
+      <ul className="flex flex-col lg:justify-center lg:gap-24 lg:grid lg:grid-cols-[410px_202px_202px] lg:text-left text-center">
+        <li className="lg:block flex flex-col items-center lg:w-auto">
+          <Logo className="bg-green-700 w-40 h-23" />
+          <p className="mt-6 max-w-[400px]">
+            We create jobs, support women, and protect the environment
+          </p>
+          <nav className="flex gap-5 mt-5">
+            <NavLink
+              to="http://www.facebook.com"
+              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
+            >
+              <IconFacebook />
+            </NavLink>
+            <NavLink
+              to="http://www.linkedin.com"
+              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
+            >
+              <IconLinkedin />
+            </NavLink>
+            <NavLink
+              to="http://www.instagram.com"
+              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
+            >
+              <IconInstagram />
+            </NavLink>
+            <NavLink
+              to="http://www.youtube.com"
+              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
+            >
+              <IconYoutube />
+            </NavLink>
+          </nav>
+        </li>
 
-          <LinkGroup heading="Our Products" options={productsLinks} />
+        <LinkGroup heading="Our Products" options={productsLinks} />
 
-          <LinkGroup heading="Quick Links" options={quickLinks} />
-        </ul>
-        <p className="mt-20 mb-2 text-center">
-          Copyright 2025. All right Reserved
-        </p>
-      </footer>
-    </>
+        <LinkGroup heading="Quick Links" options={quickLinks} />
+      </ul>
+      <p className="mt-20 mb-2 text-center">
+        Copyright 2025. All right Reserved
+      </p>
+    </footer>
   );
 };
 

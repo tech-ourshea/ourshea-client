@@ -16,7 +16,7 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      <section className="px-20 pt-25 pb-20">
+      <section className="px-5.5 lg:px-20 pt-25 pb-20">
         <h4 className="text-primary-900">About OurShea</h4>
         <p className="mt-7">
           Rooted in generations of shea butter craftsmanship, OurShea was
@@ -27,7 +27,7 @@ const WhoWeAre = () => {
           the environment. Blessed with abundant sunshine, our region provides
           the perfect climate for cultivating high-quality shea nuts.
         </p>
-        <div className="flex gap-10 mt-7">
+        <div className="flex lg:flex-row flex-col gap-10 mt-7">
           <img
             src="/images/who-we-are.png"
             alt="ourshea - women carrying shea seedlings"

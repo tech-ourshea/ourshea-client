@@ -18,10 +18,10 @@ const ProductDetails = ({ product }: Props) => {
           <h2>{product.name}</h2>
         </div>
       </div>
-      <div className="px-20 pt-25 pb-20">
+      <div className="px-5.5 md:px-20 pt-25 pb-20">
         <div className="mx-auto w-fit">
-          <h4 className="text-primary-900">{`The Idea behind ${product.name}`}</h4>
-          <div className="flex justify-center items-center gap-9">
+          <h4 className="mb-10 lg:mb-0 text-primary-900 text-center">{`The Idea behind ${product.name}`}</h4>
+          <div className="flex flex-col md:flex-wrap justify-center items-center gap-9">
             <img src={product.images.large} alt={`ourshea ${product.name}`} />
             <div className="max-w-159">
               {product.details.map((prod, indx) => {
@@ -35,7 +35,7 @@ const ProductDetails = ({ product }: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex gap-75 bg-primary-900 px-20 py-10">
+      <div className="flex md:flex-row flex-col gap-10 md:gap-75 bg-primary-900 px-5.5 md:px-20 py-10">
         <div>
           <h4 className="mb-7 text-white">Product Information</h4>
           {Object.entries(product.productInformation).map((ent, indx) => {
@@ -50,7 +50,7 @@ const ProductDetails = ({ product }: Props) => {
         </div>
         <div>
           <h4 className="mb-7 font-medium text-white">Partners</h4>
-          <ul className="flex justify-center gap-8">
+          <ul className="flex md:flex-row flex-col justify-center md:gap-8">
             {product.partners.map((partner, indx) => {
               return (
                 <img

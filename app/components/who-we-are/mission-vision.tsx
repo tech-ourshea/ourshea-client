@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionVision = () => {
   return (
-    <section className="bg-primary-900 px-20 py-10 text-white">
+    <section className="bg-primary-900 px-5.5 lg:px-20 py-10 text-white">
       <div>
         <h3>Our Mission</h3>
         <p className="mt-5">

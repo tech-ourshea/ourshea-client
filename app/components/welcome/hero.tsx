@@ -1,18 +1,82 @@
 import products from "../../utils/products.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
+
 const heroImages = [
   "/images/landing-img.png",
   "/images/landing-img.png",
   "/images/landing-img.png",
 ];
 
+const productRanges = {
+  mobile: 1,
+  tablet: 2,
+  laptop: 3,
+};
 const Hero = () => {
   const [currentImgIndx, setCurrentImgIndx] = useState<number>(0);
+  const [currentProducts, setCurrentProducts] = useState<{
+    start: number;
+    count: number;
+  }>({ start: 0, count: 1 });
 
+  useEffect(() => {
+    const mq768 = window.matchMedia("(min-width: 768px)");
+    const mq1024 = window.matchMedia("(min-width: 1024px)");
+    const mq1536 = window.matchMedia("(min-width: 1536px)");
+
+    const update = () => {
+      setCurrentProducts((prev) => {
+        if (mq1536.matches) return { ...prev, count: productRanges.laptop };
+        if (mq1024.matches) return { ...prev, count: productRanges.tablet };
+        return { ...prev, count: productRanges.mobile };
+      });
+    };
+
+    // Initial check
+    update();
+
+    // Event listeners
+    mq768.addEventListener("change", update);
+    mq1024.addEventListener("change", update);
+    mq1536.addEventListener("change", update);
+
+    return () => {
+      mq768.removeEventListener("change", update);
+      mq1024.removeEventListener("change", update);
+      mq1536.removeEventListener("change", update);
+    };
+  }, []);
+
+  let productsToRender = [];
+  let count = currentProducts.count;
+  for (let i = currentProducts.start; count !== 0; i++) {
+    productsToRender.push(products[i]);
+    count = count - 1;
+    if (i == products.length - 1) i = 0;
+  }
+
+  const changeProduct = (direction: "forward" | "back") => {
+    setCurrentProducts((prev) => {
+      let current = prev.start;
+      if (direction === "forward") {
+        current = current + 1;
+      } else {
+        current = current - 1;
+      }
+
+      if (current > products.length - 1) {
+        current = 0;
+      }
+      if (current < 0) {
+        current = products.length - 1;
+      }
+      return { ...prev, start: current };
+    });
+  };
   return (
     <section className="border-primary-900 border-b-10">
-      <div className="relative mt-7 h-147">
+      <div className="relative mt-2.5 md:mt-7 h-147">
         <img
           className="z-10 absolute w-full h-full object-cover"
           src="/images/landing-img.png"
@@ -20,7 +84,7 @@ const Hero = () => {
         />
 
         <div className="z-20 absolute mt-47 w-full text-white text-center">
-          <h1 className="m-auto max-w-218.25">
+          <h1 className="m-auto px-1 max-w-218.25 text-2xl">
             We are an eco-conscious producer of premium organic shea butter.
           </h1>
           <p className="m-auto mt-7 max-w-183">
@@ -53,13 +117,14 @@ const Hero = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-center items-center gap-60 px-20 py-16.5">
+      <div className="flex justify-center items-center gap-20 lg:gap-60 px-4 lg:px-20 py-7 lg:py-16.5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
           viewBox="0 0 24 24"
           className="fill-primary-900 w-6 h-12 cursor-pointer"
+          onClick={() => changeProduct("back")}
         >
           <path
             fill="none"
@@ -72,19 +137,19 @@ const Hero = () => {
         </svg>
 
         <div className="flex gap-25">
-          {products.map((product, indx) => {
+          {productsToRender.map((product, indx) => {
             return (
               <Link
                 to={product.url}
                 key={indx}
-                className="flex flex-col justify-between"
+                className="flex flex-col items-center"
               >
                 <img
                   src={product.images.small}
                   alt={`OurShea-${product.name}`}
-                  className="object-fill"
+                  className="w-38 h-22.75 object-fill"
                 />
-                <p className="mt-4 font-[600] text-16 text-gold-900">
+                <p className="mt-4 font-[600] text-16 text-gold-900 text-center">
                   {product.name}
                 </p>
               </Link>
@@ -97,6 +162,7 @@ const Hero = () => {
           height="1em"
           viewBox="0 0 24 24"
           className="fill-primary-900 w-6 h-12 cursor-pointer"
+          onClick={() => changeProduct("forward")}
         >
           <path
             fill="none"
@@ -113,3 +179,4 @@ const Hero = () => {
 };
 
 export default Hero;
+// How do I check for screen sizes for 768px and above, 1024px and above, 1536px and above using tx?

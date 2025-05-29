@@ -2,7 +2,6 @@ import { Fragment } from "react/jsx-runtime";
 import Hero from "./hero";
 import About from "./about";
 import CoreValues from "./core-values";
-import TagLine from "../layout/tag-line";
 import Testimonials from "./testimonials";
 
 export function Welcome() {

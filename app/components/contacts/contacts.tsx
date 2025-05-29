@@ -14,7 +14,7 @@ const Contacts = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-58 mx-20 my-20">
+      <div className="flex justify-center gap-58 mx-5.5 md:mx-20 my-20">
         <div>
           <h1 className="max-w-76 text-6xl">Let’s Get in touch</h1>
           <p className="mt-10 font-[600]">We are Just call away from you!!</p>
@@ -37,7 +37,7 @@ const Contacts = () => {
             </strong>
           </p>
         </div>
-        <div className="mt-13">
+        <div className="hidden md:block mt-13">
           <div className="flex justify-between items-center">
             <svg
               width="206"
