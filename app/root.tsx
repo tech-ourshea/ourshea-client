@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import PageNotFound from "./routes/404";
+import { useEffect } from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -53,9 +54,22 @@ export function meta({}: Route.MetaArgs) {
       content: "8jMBjXnOlGcTM73skK2e3UyDQP42bS2mm0plJ0FrfiM",
     },
   ];
-};
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(...args: any[]) {
+      window.dataLayer.push(args);
+    }
+
+    window.gtag = gtag;
+
+    window.gtag("js", new Date());
+    window.gtag("config", `G-${import.meta.env.VITE_GOOGLE_ANALYTICS_ID}`);
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -65,6 +79,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           name="google-site-verification"
           content="8jMBjXnOlGcTM73skK2e3UyDQP42bS2mm0plJ0FrfiM"
         />
+
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-${
+            import.meta.env.VITE_GOOGLE_ANALYTICS_ID
+          }`}
+        ></script>
         <Meta />
         <Links />
       </head>
