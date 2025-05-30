@@ -6,4 +6,4 @@ Disallow: /*?ref=
 Disallow: /*?utm_
 
 # Sitemap location
-Sitemap: https://ourshea.vercel.app/sitemap.xml
+Sitemap: https://ourshea.com/sitemap.xml
