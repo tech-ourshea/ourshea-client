@@ -48,6 +48,10 @@ export function meta({}: Route.MetaArgs) {
       name: "author",
       content: "Louis Marie Atoluko Ayariga",
     },
+    {
+      name: "google-site-verification",
+      content: "8jMBjXnOlGcTM73skK2e3UyDQP42bS2mm0plJ0FrfiM",
+    },
   ];
 };
 
