@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="lg:block flex flex-col items-center mb-10 px-16 lg:px-52 pb-2 border-b-[1px]">
       <ul className="flex flex-col lg:justify-center lg:gap-24 lg:grid lg:grid-cols-[410px_202px_202px] lg:text-left text-center">
         <li className="lg:block flex flex-col items-center lg:w-auto">
-          <Logo className="bg-green-700 w-40 h-23" />
+          <Logo className="w-40 h-23" />
           <p className="mt-6 max-w-[400px]">
             We create jobs, support women, and protect the environment
           </p>
