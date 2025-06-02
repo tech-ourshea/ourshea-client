@@ -36,7 +36,7 @@ const Footer = () => {
               <IconInstagram />
             </NavLink>
             <NavLink
-              to="http://www.youtube.com"
+              to="https://www.youtube.com/@OurSheaGhanaLtd"
               className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
             >
               <IconYoutube />

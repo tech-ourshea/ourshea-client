@@ -10,7 +10,7 @@ export default [
   layout("./layout/main-layer.tsx", [
     index("routes/home.tsx"),
     ...prefix("/about-us", [
-      route("/who-we-are", "routes/about/about-us.tsx"),
+      index("routes/about/about-us.tsx"),
       route("our-team", "routes/about/our-team.tsx"),
       route("board-of-directors", "routes/about/board-of-directors.tsx"),
     ]),

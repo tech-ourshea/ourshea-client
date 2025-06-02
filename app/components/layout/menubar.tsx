@@ -8,11 +8,11 @@ import Modal from "../ui/modal";
 
 const aboutUsDropdownData = {
   name: "About Us",
-  to: "/about-us/who-we-are",
+  to: "/about-us/",
   options: [
     {
       name: "Who We Are",
-      to: "/about-us/who-we-are",
+      to: "/about-us/",
     },
 
     {
@@ -29,7 +29,7 @@ const aboutUsDropdownData = {
 
 const productsDropdownData = {
   name: "Our Products",
-  to: "/about-us/who-we-are",
+  to: products[0].url,
   options: products.map((prod) => {
     return { name: prod.name, to: prod.url };
   }),
@@ -45,7 +45,7 @@ const Menubar = () => {
         <Modal isOpen={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
           <div className="flex flex-col items-end mr-5">
             <Link to="/">
-              <img src="logo.png" className="mt-10" />
+              <img src="logo.png" alt="ourshea" className="mt-10" />
             </Link>
             <nav className="flex flex-col items-end gap-2.5 mt-4">
               <Link to="">Home</Link>
@@ -65,7 +65,7 @@ const Menubar = () => {
       </div>
       <div className="hidden md:flex justify-between items-center px-5.5 lg:px-20 pt-4">
         <Link to={"/"}>
-          <img src="/logo.png" className="w-23 h-13" />
+          <img src="/logo.png" alt="ourshea" className="w-23 h-13" />
         </Link>
         <nav className="flex items-center gap-2 lg:gap-8">
           <NavItem to="">Home</NavItem>
