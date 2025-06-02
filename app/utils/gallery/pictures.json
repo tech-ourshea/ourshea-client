@@ -1,98 +1,39 @@
 [
   {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
+    "name": "Shea Butter Kneeding",
+    "link": "/images/gallery/images/kneeding-2.webp"
+  },
+  {
+    "name": "Grinding Sheanuts",
+    "link": "/images/gallery/images/grinding.webp"
   },
   {
     "name": "message",
-    "link": "/images/gallery/images/image_2.png"
+    "link": "/images/gallery/images/kneeding-2.webp"
+  },
+  {
+    "name": "Boiling stage of Sheabutter Production",
+    "link": "/images/gallery/images/boiling-2.webp"
+  },
+  {
+    "name": "Women roasting sheanuts",
+    "link": "/images/gallery/images/roasting.webp"
   },
   {
     "name": "message",
-    "link": "/images/gallery/images/image_3.png"
+    "link": "/images/gallery/images/kneeding-2.webp"
   },
   {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
+    "name": "Boiling of sheanuts",
+    "link": "/images/gallery/images/boiling-3.webp"
   },
   {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
+    "name": "Sorting Sheanuts",
+    "link": "/images/gallery/images/sorting-washing-2.webp"
   },
   {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_1.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_2.png"
-  },
-  {
-    "name": "message",
-    "link": "/images/gallery/images/image_3.png"
+    "name": "Washing of Sheanuts",
+    "link": "/images/gallery/images/sorting-washing-1.webp"
   }
 ]
+

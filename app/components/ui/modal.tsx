@@ -5,15 +5,24 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: ReactNode;
+  className?: string;
 }
-const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({
+  children,
+  isOpen,
+  onClose,
+  className,
+}) => {
   const [isClient, setIsClient] = useState<boolean>(false);
   useEffect(() => {
     setIsClient(true);
   });
   if (!isOpen || !isClient) return <></>;
   return createPortal(
-    <div className="z-50000 fixed bg-gold-500 w-svw h-full" onClick={onClose}>
+    <div
+      className={"z-50000 fixed bg-gold-500 w-svw h-full " + className}
+      onClick={onClose}
+    >
       {children}
     </div>,
     document.getElementById("root") as HTMLElement

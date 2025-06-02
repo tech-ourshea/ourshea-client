@@ -3,15 +3,6 @@ export type ProductPartnersType = {
   logo: string;
 };
 
-export type ProductInformationType = {
-  "Product Name": string;
-  "INCI Name": string;
-  "CAS Number": string;
-  "EINECS Number": string;
-  REACH: string;
-  "Shelf Life": string;
-};
-
 export type ProductImagesType = {
   small: string;
   medium: string;
@@ -25,6 +16,12 @@ export type ProductType = {
   url: string;
   images: ProductImagesType;
   details: string[];
-  productInformation: ProductInformationType;
-  partners: ProductPartnersType[];
+  features: Object;
+  benefits: string[];
+  specifications?: Object;
+  ingredients?: Object;
+  applications?: Object;
+  storage?: string[];
+  "Minimum Order Quantity (MOQ)"?: string;
+  "Lead Time"?: string;
 };

@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 const heroImages = [
-  "/images/landing-img.png",
-  "/images/landing-img.png",
-  "/images/landing-img.png",
+  "/images/gallery/images/boiling-1.webp",
+  "/images/gallery/images/boiling-2.webp",
+  "/images/gallery/images/boiling-3.webp",
 ];
 
 const productRanges = {
@@ -13,6 +13,7 @@ const productRanges = {
   tablet: 2,
   laptop: 3,
 };
+
 const Hero = () => {
   const [currentImgIndx, setCurrentImgIndx] = useState<number>(0);
   const [currentProducts, setCurrentProducts] = useState<{
@@ -79,12 +80,12 @@ const Hero = () => {
       <div className="relative mt-2.5 md:mt-7 h-147">
         <img
           className="z-10 absolute w-full h-full object-cover"
-          src="/images/landing-img.png"
+          src={heroImages[currentImgIndx]}
           alt="landing image"
         />
 
         <div className="z-20 absolute mt-47 w-full text-white text-center">
-          <h1 className="m-auto px-1 max-w-218.25 text-2xl">
+          <h1 className="m-auto px-1 max-w-218.25 text-2xl lg:text-4xl">
             We are an eco-conscious producer of premium organic shea butter.
           </h1>
           <p className="m-auto mt-7 max-w-183">

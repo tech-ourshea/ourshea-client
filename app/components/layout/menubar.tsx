@@ -63,11 +63,11 @@ const Menubar = () => {
           onClick={() => setShowMobileMenu(true)}
         />
       </div>
-      <div className="hidden md:flex justify-between items-center px-20 pt-4">
+      <div className="hidden md:flex justify-between items-center px-5.5 lg:px-20 pt-4">
         <Link to={"/"}>
-          <img src="logo.png" className="w-23 h-13" />
+          <img src="/logo.png" className="w-23 h-13" />
         </Link>
-        <nav className="flex gap-8">
+        <nav className="flex items-center gap-2 lg:gap-8">
           <NavItem to="">Home</NavItem>
           <DropDown {...aboutUsDropdownData} />
           <DropDown {...productsDropdownData} />

@@ -20,10 +20,10 @@ const ProductDetails = ({ product }: Props) => {
       </div>
       <div className="px-5.5 md:px-20 pt-25 pb-20">
         <div className="mx-auto w-fit">
-          <h4 className="mb-10 lg:mb-0 text-primary-900 text-center">
+          <h4 className="mb-10 lg:mb-0 text-primary-900 lg:text-left text-center">
             {product.name}
           </h4>
-          <div className="flex flex-col md:flex-wrap justify-center items-center gap-9">
+          <div className="flex lg:flex-row flex-col md:flex-wrap justify-center items-center gap-9 lg:mt-8">
             <img src={product.images.large} alt={`ourshea ${product.name}`} />
             <div className="max-w-159">
               {product.details.map((prod, indx) => {
@@ -37,35 +37,78 @@ const ProductDetails = ({ product }: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col gap-10 md:gap-75 bg-primary-900 px-5.5 md:px-20 py-10">
-        <div>
-          <h4 className="mb-7 text-white">Product Information</h4>
-          {Object.entries(product.productInformation).map((ent, indx) => {
-            return (
-              <p key={indx}>
-                <span className="font-medium">{ent[0]}</span>
-                {`:     `}
-                <span>{ent[1]}</span>
-              </p>
-            );
-          })}
-        </div>
-        <div>
-          <h4 className="mb-7 font-medium text-white">Partners</h4>
-          <ul className="flex md:flex-row flex-col justify-center md:gap-8">
-            {product.partners.map((partner, indx) => {
-              return (
-                <img
-                  key={indx}
-                  className="w-27 h-auto"
-                  src={partner.logo}
-                  alt={`ourshea partner ${partner.name}`}
-                />
-              );
-            })}
-          </ul>
-        </div>
+      <div className="flex flex-col gap-19 px-5.5 md:px-40">
+        {product.specifications &&
+          parseObject(product.specifications, "Specifications")}
+        {product.ingredients && parseObject(product.ingredients, "Ingredients")}
+        {product.features && parseObject(product.features, "Features")}
+        {product.benefits && parseList(product.benefits, "Benefits")}
+        {product.applications &&
+          parseObject(product.applications, "Applications")}
+        {product.storage && parseList(product.storage, "Storage")}
+        {product.storage && parseList(product.storage, "Storage")}
+        {product["Minimum Order Quantity (MOQ)"] && (
+          <div className="">
+            <p className="mb-8 font-semibold text-primary-900">
+              Minimum Order Quantity (MOQ)
+            </p>
+            <p>{product["Minimum Order Quantity (MOQ)"]}</p>
+          </div>
+        )}
+        {product["Lead Time"] && (
+          <div className="">
+            <p className="mb-8 font-semibold text-primary-900">Lead Time</p>
+            <p>{product["Lead Time"]}</p>
+          </div>
+        )}
       </div>
+    </div>
+  );
+};
+
+const parseObject = (data: Object, title?: string) => {
+  return (
+    <div className="">
+      <p className="mb-8 font-semibold text-primary-900">{title}</p>
+      <ul className="flex flex-col gap-2.5">
+        {Object.entries(data).map((dat, indx) => {
+          let heading = dat[0];
+          if (heading === "0" || !heading) {
+            console.log("Changing tfrom 0 to nul");
+            heading = "";
+          } else {
+            heading = heading + ":   ";
+          }
+          return (
+            <li key={indx} className="flex items-center gap-3">
+              <div className="flex bg-primary-900 rounded-full w-4 h-4"></div>
+              <div>
+                <p>{`${heading}${dat[1]}`}</p>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+const parseList = (data: string[], title?: string) => {
+  return (
+    <div className="">
+      <p className="mb-8 font-semibold text-primary-900">{title}</p>
+      <ul className="flex flex-col gap-2.5">
+        {data.map((dat, indx) => {
+          return (
+            <li key={indx} className="flex items-center gap-3">
+              <div className="flex bg-primary-900 rounded-full w-4 h-4"></div>
+              <div>
+                <p>{dat}</p>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Contacts = () => {
           <h2>Contact Us</h2>
         </div>
       </div>
-      <div className="lg:flex justify-between items-center gap-58 lg:gap-20 grid-cols-[328px_713px] mx-5.5 lg:mx-20 mt-10 lg:mt-30 mb-9">
+      {/* <div className="lg:flex justify-between items-center gap-58 lg:gap-20 grid-cols-[328px_713px] mx-5.5 lg:mx-20 mt-10 lg:mt-30 mb-9">
         <div className="hidden lg:block">
           <svg
             width="206"
@@ -30,16 +30,18 @@ const Contacts = () => {
           </svg>
         </div>
         <h1 className="text-4xl lg:text-6xl text-center lg:text-right">
-          Let’s Get in touch
+          Let’s get in touch
         </h1>
-      </div>
+      </div> */}
 
-      <div className="lg:flex lg:justify-between items-center lg:items-center lg:gap-20 mx-5.5 lg:mx-20 lg:text-left text-center">
+      <div className="lg:flex lg:justify-between items-center lg:items-center lg:gap-20 mx-5.5 lg:mx-20 mt-10 lg:text-left text-center">
         <div className="">
-          <p className="font-[600]">We are Just a call away from you!!</p>
+          <p className="font-[600]">Let’s get in touch:</p>
           <p className="mt-10">Phone</p>
           <p className="mt-2">
-            <strong>(+233) (0) 24 448 5242 | 54 472 6332</strong>
+            <strong>(+233) (0) 24 448 5242</strong>
+            <br />
+            <strong>+1 (206) 979 8033</strong>
           </p>
           <p className="mt-8">Email</p>
           <p className="mt-2">

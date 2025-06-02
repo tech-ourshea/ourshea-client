@@ -14,7 +14,7 @@ const Testimonials = () => {
           return (
             <li key={indx} className="">
               <div className="">
-                <div className="flex justify-center items-center gap-2.5">
+                <div className="flex justify-center lg:justify-start items-center gap-2.5">
                   <div className="bg-grey-300 rounded-full w-10 h-10"></div>
                   <div>
                     <p className="font-medium text-[16px]">{test.name}</p>

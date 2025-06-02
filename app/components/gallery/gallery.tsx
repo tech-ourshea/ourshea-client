@@ -7,12 +7,19 @@ import Photo from "./Photo";
 type Props = {
   setPhoto: Function;
 };
+
+const numberOfPhotosToShow = 9;
+const numberOfVideosToShow = 8;
 const Gallery = ({ setPhoto }: Props) => {
   const [showAllPictures, setShowAllPictures] = useState<boolean>(false);
   const [showAllVideos, setShowAllVideos] = useState<boolean>(false);
 
-  const showingPhotos = showAllPictures ? pictures : pictures.slice(0, 6);
-  const showingVideos = showAllVideos ? videos : videos.slice(0, 6);
+  const showingPhotos = showAllPictures
+    ? pictures
+    : pictures.slice(0, numberOfPhotosToShow);
+  const showingVideos = showAllVideos
+    ? videos
+    : videos.slice(0, numberOfVideosToShow);
 
   return (
     <>
@@ -36,19 +43,24 @@ const Gallery = ({ setPhoto }: Props) => {
                 className=""
                 onClick={() => setPhoto({ url: pic.link, name: pic.name })}
               >
-                <img src={pic.link} className="cursor-pointer" />
-                <p className="text-center">{pic.name}</p>
+                <img
+                  src={pic.link}
+                  className="max-w-92.75 max-h-62 cursor-pointer"
+                />
+                <p className="mt-2 max-w-92.75 text-center">{pic.name}</p>
               </li>
             );
           })}
         </ul>
-        <button
-          className="flex justify-center items-center bg-primary-900 hover:bg-primary-700 mx-auto mt-10 border-[1px] border-black w-38 h-9 text-white cursor-pointer"
-          type="button"
-          onClick={() => setShowAllPictures((prev) => !prev)}
-        >
-          {showAllPictures ? "Show Less" : "Show All"}
-        </button>
+        {pictures.length > numberOfPhotosToShow && (
+          <button
+            className="flex justify-center items-center bg-primary-900 hover:bg-primary-700 mx-auto mt-30 border-[1px] border-black w-38 h-9 text-white cursor-pointer"
+            type="button"
+            onClick={() => setShowAllPictures((prev) => !prev)}
+          >
+            {showAllPictures ? "Show Less" : "Show All"}
+          </button>
+        )}
       </div>
 
       <div className="bg-primary-100/50 mt-10 p-20">
@@ -57,19 +69,21 @@ const Gallery = ({ setPhoto }: Props) => {
           {showingVideos.map((vid, indx) => {
             return (
               <li key={indx} className="">
-                <YoutubePlayer embedId={vid.id} className="w-83 h-62" />
-                <p className="text-center">{vid.name}</p>
+                <YoutubePlayer embedId={vid.id} className="w-92.75 h-62" />
+                <p className="max-w-92.75 text-center">{vid.name}</p>
               </li>
             );
           })}
         </ul>
-        <button
-          className="flex justify-center items-center bg-primary-900 hover:bg-primary-700 mx-auto mt-10 border-[1px] border-black w-38 h-9 text-white cursor-pointer"
-          type="button"
-          onClick={() => setShowAllVideos((prev) => !prev)}
-        >
-          {showAllVideos ? "Show Less" : "Show All"}
-        </button>
+        {pictures.length > numberOfPhotosToShow && (
+          <button
+            className="flex justify-center items-center bg-primary-900 hover:bg-primary-700 mx-auto mt-10 border-[1px] border-black w-38 h-9 text-white cursor-pointer"
+            type="button"
+            onClick={() => setShowAllVideos((prev) => !prev)}
+          >
+            {showAllVideos ? "Show Less" : "Show All"}
+          </button>
+        )}
       </div>
     </>
   );

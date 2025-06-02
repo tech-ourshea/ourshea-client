@@ -10,7 +10,7 @@ import { EMAIL } from "~/utils/general";
 const ContactsBanner = () => {
   return (
     <div className="px-5 lg:px-20 py-2 border-primary-900 border-b-[0.5px] text-[6px] text-primary-900 lg:text-sm">
-      <div className="flex justify-between">
+      <div className="flex justify-end">
         <ul className="flex gap-2.5 list-none">
           <li>
             <Link
@@ -34,12 +34,8 @@ const ContactsBanner = () => {
           <li className="flex justify-center items-center">
             <Link to={`mailto:${EMAIL}`}>{EMAIL}</Link>
           </li>
-          <li className="bg-primary-900 w-[0.5px]"></li>
-          <li className="flex justify-center items-center">
-            Mon – Sat: 8:00 am – 5:00 pm GMT
-          </li>
         </ul>
-        <ul className="flex items-center gap-1 lg:gap-5">
+        {/* <ul className="flex items-center gap-1 lg:gap-5">
           <li>
             <a
               className="opacity-30"
@@ -76,7 +72,7 @@ const ContactsBanner = () => {
               <IconYoutube className="w-[6px] lg:w-6 h-[6px] lg:h-6" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

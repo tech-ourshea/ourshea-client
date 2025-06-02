@@ -1,12 +1,11 @@
-import React from "react";
 import { Link } from "react-router";
 
 const About = () => {
   return (
-    <section className="flex md:flex-row flex-col justify-center gap-5 md:p-20 px-5.5 py-7.5">
+    <section className="flex lg:flex-row flex-col justify-center gap-5 md:p-20 px-5.5 py-7.5">
       <img
-        className=""
-        src="images/who-we-are.png"
+        className="max-w-152 max-h-100"
+        src="images/gallery/images/sorting-washing-2.webp"
         alt="ourshea - women with shea"
       />
       <div className="flex flex-col justify-center">
@@ -19,7 +18,7 @@ const About = () => {
           all produced with environmental and social responsibility at heart.
         </p>
         <Link
-          className="mt-9 font-medium text-primary-900 text-right"
+          className="mt-9 font-medium text-primary-900 text-xl text-right"
           to="/about-us/who-we-are"
         >
           Read More

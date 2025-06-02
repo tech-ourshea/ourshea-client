@@ -15,6 +15,7 @@ const Footer = () => {
           <p className="mt-6 max-w-[400px]">
             We create jobs, support women, and protect the environment
           </p>
+
           <nav className="flex gap-5 mt-5">
             <NavLink
               to="http://www.facebook.com"
@@ -41,6 +42,9 @@ const Footer = () => {
               <IconYoutube />
             </NavLink>
           </nav>
+          <p className="mt-4 text-primary-900">
+            Mon – Sat: 8:00 am – 5:00 pm GMT
+          </p>
         </li>
 
         <LinkGroup heading="Our Products" options={productsLinks} />

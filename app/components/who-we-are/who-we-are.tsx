@@ -19,21 +19,30 @@ const WhoWeAre = () => {
       <section className="px-5.5 lg:px-20 pt-25 pb-20">
         <h4 className="text-primary-900">About OurShea</h4>
         <p className="mt-7">
-          Rooted in generations of shea butter craftsmanship, OurShea was
-          founded in 2024 as an eco-conscious producer of premium organic shea
-          butter. Based in northern Ghana and in partnership with the Bongo Soe
-          Shea Butter Women Group, we process shea butter for local and
-          international markets—creating jobs, supporting women, and protecting
-          the environment. Blessed with abundant sunshine, our region provides
-          the perfect climate for cultivating high-quality shea nuts.
+          OurShea Ghana Ltd is a social enterprise dedicated to producing
+          ethically sourced shea products while empowering women in northern
+          Ghana. Our commitment to zero waste, fair trade, and sustainable
+          practices ensures that every nut we supply supports environmental
+          preservation and economic upliftment.
         </p>
         <div className="flex lg:flex-row flex-col gap-10 mt-7">
           <img
-            src="/images/who-we-are.png"
+            className="lg:max-w-165 lg:max-h-105"
+            src="/images/gallery/images/sorting-washing-2.webp"
             alt="ourshea - women carrying shea seedlings"
           />
           <div className="flex flex-col justify-center">
             <p>
+              Rooted in generations of shea butter craftsmanship, OurShea was
+              founded in 2024 as an eco-conscious producer of premium organic
+              shea butter. Based in northern Ghana and in partnership with the
+              Bongo Soe Shea Butter Women Group, we process shea butter for
+              local and international markets—creating jobs, supporting women,
+              and protecting the environment. Blessed with abundant sunshine,
+              our region provides the perfect climate for cultivating
+              high-quality shea nuts.
+            </p>
+            <p className="mt-4">
               From traditional methods to innovative agile practices, we blend
               heritage and technology to meet global demand for ethically
               sourced skincare ingredients. We are more than a manufacturer.
