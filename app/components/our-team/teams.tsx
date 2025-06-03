@@ -48,18 +48,18 @@ const teamMembers = [
   {
     name: "Francis Abugbilla, PhD",
     designation: "Chief Executive Officer",
-    img: "/images/our-team/francis.jpeg",
+    img: "/images/our-team/francis.webp",
   },
 
   {
     name: "Raymond Ayinne",
     designation: "Chief Operations Officer",
-    img: "/images/our-team/raymond.jpeg",
+    img: "/images/our-team/raymond.webp",
   },
   {
     name: "Eunice Awini",
     designation: "Chief Financial Officer",
-    img: "/images/our-team/eunice.jpeg",
+    img: "/images/our-team/eunice.webp",
   },
 ];
 export default Teams;
