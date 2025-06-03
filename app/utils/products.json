@@ -130,37 +130,5 @@
       "Shelf Life": "24 months from production date",
       "Storage": "Store in a cool, dry place. Use a draining soap dish to extend soap life."
     }
-  },
-  {
-    "name": "Smokeless Charcoal",
-    "url": "/products/smokeless-charcoal",
-    "slug": "smokeless-charcoal",
-    "images": {
-      "small": "/images/products/smokeless-charcoal/small.png",
-      "medium": "",
-      "large": "/images/products/smokeless-charcoal/large.png",
-      "banner": "/images/products/banners/smokeless-charcoal.png"
-    },
-    "details": [
-      "Our smokeless charcoal briquette is made from the organic waste generated during shea butter production. It is a clean, sustainable alternative to traditional wood charcoal, designed for cooking, heating, and small-scale industrial use."
-    ],
-    "features": {
-      "Smokeless and Odorless": "Produces minimal smoke, reducing indoor air pollution and health risks.",
-      "High Energy Efficiency": "Burns longer and hotter than traditional wood charcoal.",
-      "Eco-Friendly": "Converts agricultural waste (shea shells and pulp) into clean fuel, reducing deforestation.",
-      "Affordable and Accessible": "A low-cost alternative for low-income households and institutions.",
-      "Zero-Waste Process": "Part of a circular economy model where waste from shea butter processing is entirely repurposed."
-    },
-    "benefits": [
-      "Reduces reliance on wood-based charcoal",
-      "Conserves forests",
-      "Lowers greenhouse gas emissions",
-      "Promotes sustainable waste management in the shea butter industry"
-    ],
-    "ingredients": { "": "Carbonized shea shell and pulp" },
-    "specifications": {
-      "Usage": "Cooking, heating, small-scale industrial use",
-      "Storage": "Store in a dry area, avoid moisture"
-    }
   }
 ]

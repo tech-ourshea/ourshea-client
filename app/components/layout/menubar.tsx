@@ -20,10 +20,10 @@ const aboutUsDropdownData = {
       to: "/about-us/our-team",
     },
 
-    {
-      name: "Board of Directors",
-      to: "/about-us/board-of-directors",
-    },
+    // {
+    //   name: "Board of Directors",
+    //   to: "/about-us/board-of-directors",
+    // },
   ],
 };
 

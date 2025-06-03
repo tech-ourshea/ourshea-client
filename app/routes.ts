@@ -12,7 +12,7 @@ export default [
     ...prefix("/about-us", [
       index("routes/about/about-us.tsx"),
       route("our-team", "routes/about/our-team.tsx"),
-      route("board-of-directors", "routes/about/board-of-directors.tsx"),
+      // route("board-of-directors", "routes/about/board-of-directors.tsx"),
     ]),
 
     route("/products/:slug", "routes/products/product.tsx"),
