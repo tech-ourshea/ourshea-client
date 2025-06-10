@@ -10,7 +10,7 @@ export function Welcome() {
       <Hero />
       <About />
       <CoreValues />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </Fragment>
   );
 }

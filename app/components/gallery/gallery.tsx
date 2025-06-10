@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import pictures from "../../utils/gallery/pictures.json";
 import videos from "../../utils/gallery/videos.json";
 import YoutubePlayer from "./YoutubePlayer";
-import Photo from "./Photo";
 
 type Props = {
   setPhoto: Function;

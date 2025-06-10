@@ -60,7 +60,7 @@ const WhoWeAre = () => {
 
       <MissionVision />
       <SDGs />
-      <Certifications />
+      {/* <Certifications /> */}
     </div>
   );
 };
