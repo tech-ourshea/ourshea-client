@@ -74,14 +74,16 @@ const parseObject = (data: Object, title?: string) => {
         {Object.entries(data).map((dat, indx) => {
           let heading = dat[0];
           if (heading === "0" || !heading) {
-            console.log("Changing tfrom 0 to nul");
             heading = "";
           } else {
             heading = heading + ":   ";
           }
           return (
-            <li key={indx} className="flex items-center gap-3">
-              <div className="flex bg-primary-900 rounded-full w-4 h-4"></div>
+            <li
+              key={indx}
+              className="items-center gap-3 grid grid-cols-[4px_1fr]"
+            >
+              <div className="flex bg-primary-900 rounded-full w-1 h-1"></div>
               <div>
                 <p>{`${heading}${dat[1]}`}</p>
               </div>
@@ -100,8 +102,11 @@ const parseList = (data: string[], title?: string) => {
       <ul className="flex flex-col gap-2.5">
         {data.map((dat, indx) => {
           return (
-            <li key={indx} className="flex items-center gap-3">
-              <div className="flex bg-primary-900 rounded-full w-4 h-4"></div>
+            <li
+              key={indx}
+              className="items-center gap-3 grid grid-cols-[4px_1fr]"
+            >
+              <div className="flex bg-primary-900 rounded-full w-1 h-1"></div>
               <div>
                 <p>{dat}</p>
               </div>

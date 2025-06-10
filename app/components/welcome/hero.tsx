@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const heroImages = [
   "/images/gallery/images/boiling-1.webp",
   "/images/gallery/images/boiling-2.webp",
-  "/images/gallery/images/boiling-3.webp",
+  "/images/gallery/images/roasting.webp",
 ];
 
 const productRanges = {
@@ -77,9 +77,10 @@ const Hero = () => {
   };
   return (
     <section className="border-primary-900 border-b-10">
-      <div className="relative mt-2.5 md:mt-7 h-147">
+      <div className="relative mt-2.5 md:mt-7 h-147 lg:h-156">
+        {/* <div className="relative mt-2.5 md:mt-7 h-[calc(100svh-108.5px)]"> */}
         <img
-          className="z-10 absolute w-full h-full object-cover"
+          className="z-10 absolute brightness-65 saturate-85 w-full h-full object-cover contrast-95"
           src={heroImages[currentImgIndx]}
           alt="landing image"
         />

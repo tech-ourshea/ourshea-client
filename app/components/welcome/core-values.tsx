@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const valuesRanges = {
   mobile: 1,
-  tablet: 2,
+  tablet: 3,
   laptop: 4,
 };
 
@@ -19,8 +19,8 @@ const CoreValues = () => {
 
     const update = () => {
       setCurrentValues((prev) => {
-        if (mq1536.matches) return { ...prev, count: valuesRanges.laptop };
-        if (mq1024.matches) return { ...prev, count: valuesRanges.tablet };
+        if (mq1024.matches) return { ...prev, count: valuesRanges.laptop };
+        if (mq768.matches) return { ...prev, count: valuesRanges.tablet };
         return { ...prev, count: valuesRanges.mobile };
       });
     };
@@ -72,7 +72,6 @@ const CoreValues = () => {
   return (
     <section className="bg-primary-900 px-5 lg:px-20 pt-10 pb-20">
       <h3 className="text-white text-center">Our Core Values</h3>
-      {/* <div className="items-center gap-25 grid grid-cols-[48px_1fr_48px]"> */}
       <div className="lg:block flex justify-between items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

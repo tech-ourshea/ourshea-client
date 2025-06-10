@@ -1,5 +1,5 @@
 import Logo from "public/logo";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import IconFacebook from "~/components/ui/icons/icon-facebook";
 import IconInstagram from "~/components/ui/icons/icon-instagram";
 import IconLinkedin from "~/components/ui/icons/icon-linkedin";
@@ -17,30 +17,34 @@ const Footer = () => {
           </p>
 
           <nav className="flex gap-5 mt-5">
-            <NavLink
-              to="http://www.facebook.com"
+            <Link
+              target="_blanc"
+              to="https://www.facebook.com/profile.php?id=61576897994193"
               className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
             >
               <IconFacebook />
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
+              target="_blanc"
               to="http://www.linkedin.com"
               className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
             >
               <IconLinkedin />
-            </NavLink>
-            <NavLink
-              to="http://www.instagram.com"
+            </Link>
+            <Link
+              target="_blanc"
+              to="https://www.instagram.com/oursheaghltd/"
               className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
             >
               <IconInstagram />
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
+              target="_blanc"
               to="https://www.youtube.com/@OurSheaGhanaLtd"
               className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
             >
               <IconYoutube />
-            </NavLink>
+            </Link>
           </nav>
           <p className="mt-4 text-primary-900">
             Mon – Sat: 8:00 am – 5:00 pm GMT

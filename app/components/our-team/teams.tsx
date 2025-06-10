@@ -49,32 +49,55 @@ const TeamMember: FC<TeamMemberProps> = ({
   indx,
 }) => {
   return (
-    <li
-      key={indx}
-      className="lg:flex gap-8 lg:bg-primary-100 px-5.5 lg:px-0 lg:pr-8 lg:h-85"
-    >
+    <li key={indx} className="px-5.5">
       <div>
         <img
-          className="w-full lg:w-55 h-100 lg:h-63 object-cover"
+          className="lg:mx-auto mt-10 lg:mt-0 w-full lg:w-1/3 h-100 lg:h-170 object-cover"
           src={img}
           alt={`ourshea ${name} ${designation}`}
         />
         <p className="mt-2.5 text-lg text-center">{name}</p>
         <p className="mb-2 text-sm text-center">{designation}</p>
       </div>
-      <div className="lg:w-75">
-        <h5 className="hidden lg:block pt-4 pb-2.5">Bio</h5>
-        <div className="lg:h-66 overflow-scroll no-scrollbar">
+      <div className="">
+        <h5 className="hidden pt-4 pb-2.5">Bio</h5>
+        <div className="space-y-6 lg:px-40 overflow-scroll no-scrollbar">
           {bio.split("\n").map((bio, indx) => (
             <div key={indx}>
-              <p className="lg:text-[16px] lg:text-left text-center">{bio}</p>
-              <br />
+              <p className="text-left">{bio}</p>
+              {/* <br /> */}
             </div>
           ))}
         </div>
       </div>
     </li>
   );
+
+  // <li
+  //   key={indx}
+  //   className="lg:flex gap-8 lg:bg-primary-100 px-5.5 lg:px-0 lg:pr-8 lg:h-85"
+  // >
+  //   <div>
+  //     <img
+  //       className="w-full lg:w-55 h-100 lg:h-63 object-cover"
+  //       src={img}
+  //       alt={`ourshea ${name} ${designation}`}
+  //     />
+  //     <p className="mt-2.5 text-lg text-center">{name}</p>
+  //     <p className="mb-2 text-sm text-center">{designation}</p>
+  //   </div>
+  //   <div className="lg:w-75">
+  //     <h5 className="hidden lg:block pt-4 pb-2.5">Bio</h5>
+  //     <div className="lg:h-66 overflow-scroll no-scrollbar">
+  //       {bio.split("\n").map((bio, indx) => (
+  //         <div key={indx}>
+  //           <p className="lg:text-[16px] lg:text-left text-center">{bio}</p>
+  //           <br />
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </div>
+  // </li>;
 };
 
 const teamMembers = [
@@ -87,10 +110,24 @@ const teamMembers = [
 As the Chief Executive Officer at OurShea Ghana, Francis defines and executes the company's product vision and roadmap, aligning them with strategic business goals. With a Certificate in Product Management from Leland (USA), he applies modern frameworks in user needs, agile development, and growth strategy to drive innovation in clean, organic shea products. His work is about creating exceptional products and building a socially responsible and environmentally sustainable brand.
 
 Francis holds a Ph.D. in International Studies and a Graduate Certificate in International Development Policy and Management from the University of Washington (USA). He is also an MBA Candidate at the Plaster Graduate School of Business, University of the Cumberlands (USA), where he is deepening his expertise in strategic management, entrepreneurship, new
-venture development, leadership, and sustainable enterprise development. In recognition of his leadership and innovation, Francis represented OurShea Ghana at the prestigious and highly competitive Blue Tech &amp; Clean Tech Accelerator organized by the Northwest Innovation Resource Center in Washington State, USA, in 2024. His participation in this accelerator underscores his commitment to bridging local knowledge with global technology and clean energy solutions.
+venture development, leadership, and sustainable enterprise development. In recognition of his leadership and innovation, Francis represented OurShea Ghana at the prestigious and highly competitive BlueTech/CleanTech Accelerator organized by the Northwest Innovation Resource Center in Washington State, USA, in 2024. His participation in this accelerator underscores his commitment to bridging local knowledge with global technology and clean energy solutions.
 
 Outside of his professional pursuits, he values spending quality time with his family and enjoys being outdoors. He is also passionate about emerging technologies and sustainability trends, always staying informed about how innovation can drive equitable and eco-conscious development across Africa and beyond.`,
   },
+
+  {
+    name: "Eunice Awini",
+    designation: "Chief Financial Officer",
+    img: "/images/our-team/eunice.webp",
+    bio: `Eunice is a dynamic entrepreneur, experienced banker, and strategic financial leader with over four years of professional experience in rural banking. She serves as a Credit Officer at a reputable rural bank in Ghana, focusing on expanding financial access for underserved populations, particularly women's cooperatives. In this role, she has been instrumental in designing and managing credit programs, facilitating group and individual loans, and promoting financial literacy among rural clients. Her efforts have directly contributed to the growth of women-led enterprises, enhanced household incomes, and strengthened local economies.
+
+In addition to her credit management responsibilities, Eunice also holds the position of Chief Financial Officer (CFO) at OurShea Ghana, which is aimed at promoting inclusive finance and entrepreneurship. As CFO, she oversees financial planning.
+
+Eunice earned her Bachelor of Science in Commerce from the University of Cape Coast School of Business, where she built a solid foundation in finance, entrepreneurship, and development economics. Her academic training and field experience fuel her passion for using banking as a tool for economic empowerment.
+
+Outside her formal roles, she is actively engaged in community development. She volunteers with women's empowerment groups, mentors young entrepreneurs, and contributes to policy discussions on financial inclusion. She is particularly interested in innovative models of rural finance, digitized banking solutions, and sustainable development strategies for marginalized populations.`,
+  },
+
   {
     name: "Raymond Ayinne",
     designation: "Chief Operations Officer",
@@ -103,18 +140,6 @@ Throughout his 20+ year career, Raymond has led community-based advocacy campaig
 Raymond holds a Master's Degree in Mass Communications from the University of Ghana, Ghana, and a Master's in Development Communication from the University for Development Studies, Ghana. His academic foundation informs his thoughtful approach to public engagement, media strategy, and stakeholder communications in development contexts.
 
 Beyond his professional role, he is deeply committed to sustainability and environmental stewardship. He actively participates in local tree-planting campaigns, champions waste reduction through community education, and supports eco-friendly innovations that promote climate resilience in rural and peri-urban communities. He continues to be a driving force in shaping inclusive, resilient, and community-led development strategies throughout northern Ghana and beyond.`,
-  },
-  {
-    name: "Eunice Awini",
-    designation: "Chief Financial Officer",
-    img: "/images/our-team/eunice.webp",
-    bio: `Eunice is a dynamic entrepreneur, experienced banker, and strategic financial leader with over four years of professional experience in rural banking. She serves as a Credit Officer at a reputable rural bank in Ghana, focusing on expanding financial access for underserved populations, particularly women's cooperatives. In this role, she has been instrumental in designing and managing credit programs, facilitating group and individual loans, and promoting financial literacy among rural clients. Her efforts have directly contributed to the growth of women-led enterprises, enhanced household incomes, and strengthened local economies.
-
-In addition to her credit management responsibilities, Eunice also holds the position of Chief Financial Officer (CFO) at OurShea Ghana, which is aimed at promoting inclusive finance and entrepreneurship. As CFO, she oversees financial planning.
-
-Eunice earned her Bachelor of Science in Commerce from the University of Cape Coast School of Business, where she built a solid foundation in finance, entrepreneurship, and development economics. Her academic training and field experience fuel her passion for using banking as a tool for economic empowerment.
-
-Outside her formal roles, she is actively engaged in community development. She volunteers with women's empowerment groups, mentors young entrepreneurs, and contributes to policy discussions on financial inclusion. She is particularly interested in innovative models of rural finance, digitized banking solutions, and sustainable development strategies for marginalized populations.`,
   },
 ];
 export default Teams;

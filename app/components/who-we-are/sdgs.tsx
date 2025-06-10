@@ -12,9 +12,9 @@ const SDGs = () => {
   return (
     <section className="p-5.5 lg:p-20">
       <p className="mx-auto max-w-320 font-[600] text-center">
-        Our operations support the Sustainable Development Goals 1, 2, 5, 8, 10,
-        and 13. We believe in addressing some of the Sustainable Development
-        Goals (SDGs)
+        Our operations support the Sustainable Development Goals (SDGs) 1, 2, 5,
+        8, 10, and 13. We believe in addressing these SDGs to positively impact
+        lives in northern Ghana.
       </p>
       <ul className="flex flex-wrap justify-center items-center gap-x-12.5 gap-y-6 mt-10">
         {sdgs.map((sdg, indx) => {
