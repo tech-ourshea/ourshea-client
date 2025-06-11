@@ -31,7 +31,7 @@ export function meta({}: Route.MetaArgs) {
     ...generateMeta({
       pageTitle: "OurShea - Home",
       description:
-        "We are an Eco-conscious producer of premium organic shea butter.",
+        "We are an eco-conscious producer of premium organic shea butter.",
       path: "/",
       imageName: "home.png",
     }),
