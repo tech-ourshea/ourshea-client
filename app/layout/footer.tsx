@@ -92,7 +92,7 @@ const LinkGroup = ({ heading, options }: LinkGroupProps) => {
 
 const quickLinks: LinkGroupOption[] = [
   { to: "/", name: "Home" },
-  { to: "/about-us/who-we-are", name: "Who We Are" },
+  { to: "/about-us/", name: "Who We Are" },
   { to: "/contact-us", name: "Contact Us" },
 ];
 
