@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 const heroImages = [
-  "/images/gallery/images/boiling-1.webp",
+  "/images/gallery/images/kneading-3.jpg",
   "/images/gallery/images/boiling-2.webp",
   "/images/gallery/images/roasting.webp",
 ];
@@ -119,7 +119,7 @@ const Hero = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-center items-center gap-20 lg:gap-60 px-4 lg:px-20 py-7 lg:py-16.5">
+      <div className="flex justify-center items-center gap-10 sm:gap-20 lg:gap-60 py-7 lg:py-16.5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
@@ -144,12 +144,12 @@ const Hero = () => {
               <Link
                 to={product.url}
                 key={indx}
-                className="flex flex-col items-center"
+                className="flex flex-col items-center w-50"
               >
                 <img
                   src={product.images.small}
                   alt={`OurShea-${product.name}`}
-                  className="w-38 h-22.75 object-fill"
+                  className="w-38 h-22.75 object-contain"
                 />
                 <p className="mt-4 font-[600] text-16 text-gold-900 text-center">
                   {product.name}
