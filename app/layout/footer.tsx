@@ -11,53 +11,32 @@ const Footer = () => {
     <footer className="lg:block flex flex-col items-center mb-10 px-16 lg:px-52 pb-2 border-b-[1px]">
       <ul className="flex flex-col lg:justify-center lg:gap-24 lg:grid lg:grid-cols-[410px_202px_202px] lg:text-left text-center">
         <li className="lg:block flex flex-col items-center lg:w-auto">
-          <Logo className="w-40 h-23" />
-          <p className="mt-6 max-w-[400px]">
-            We create jobs, support women, and protect the environment
-          </p>
+          <Logo className="hidden lg:block w-40 h-23" />
+          <img src="/logo.png" alt="ourshea" className="lg:hidden w-29 h-16" />
+          <p className="mt-6 max-w-[400px]">We create jobs, support women, and protect the environment</p>
 
           <nav className="flex gap-5 mt-5">
-            <Link
-              target="_blanc"
-              to="https://www.facebook.com/profile.php?id=61576897994193"
-              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-            >
+            <Link target="_blanc" to="https://www.facebook.com/profile.php?id=61576897994193" className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10">
               <IconFacebook />
             </Link>
-            <Link
-              target="_blanc"
-              to="http://www.linkedin.com"
-              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-            >
+            <Link target="_blanc" to="http://www.linkedin.com" className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10">
               <IconLinkedin />
             </Link>
-            <Link
-              target="_blanc"
-              to="https://www.instagram.com/oursheaghltd/"
-              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-            >
+            <Link target="_blanc" to="https://www.instagram.com/oursheaghltd/" className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10">
               <IconInstagram />
             </Link>
-            <Link
-              target="_blanc"
-              to="https://www.youtube.com/@OurSheaGhanaLtd"
-              className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10"
-            >
+            <Link target="_blanc" to="https://www.youtube.com/@OurSheaGhanaLtd" className="flex justify-center items-center border-[1px] border-primary-900 rounded-full w-10 h-10">
               <IconYoutube />
             </Link>
           </nav>
-          <p className="mt-4 text-primary-900">
-            Mon – Sat: 8:00 am – 5:00 pm GMT
-          </p>
+          <p className="mt-4 text-primary-900">Mon – Sat: 8:00 am – 5:00 pm GMT</p>
         </li>
 
         <LinkGroup heading="Our Products" options={productsLinks} />
 
         <LinkGroup heading="Quick Links" options={quickLinks} />
       </ul>
-      <p className="mt-20 mb-2 text-center">
-        Copyright 2025. All right Reserved
-      </p>
+      <p className="mt-20 mb-2 text-center">Copyright 2025. All right Reserved</p>
     </footer>
   );
 };

@@ -58,24 +58,19 @@ const Menubar = () => {
         </Modal>
       )}
       <div className="md:hidden flex justify-end mt-2.5">
-        <IconMenu
-          className="fill-primary-900 mr-5"
-          onClick={() => setShowMobileMenu(true)}
-        />
+        <IconMenu className="fill-primary-900 mr-5" onClick={() => setShowMobileMenu(true)} />
       </div>
       <div className="hidden md:flex justify-between items-center px-5.5 lg:px-20 pt-4">
         <Link to={"/"}>
-          <img src="/logo.png" alt="ourshea" className="w-23 h-13" />
+          {/* <img src="/logo.png" alt="ourshea" className="w-29 h-16" /> */}
+          <Logo className="w-40 h-23" />
         </Link>
         <nav className="flex items-center gap-2 lg:gap-8">
           <NavItem to="">Home</NavItem>
           <DropDown {...aboutUsDropdownData} />
           <DropDown {...productsDropdownData} />
           <NavItem to="gallery">Gallery</NavItem>
-          <NavLink
-            className="bg-primary-900 hover:bg-primary-700 px-6 py-1.5 rounded-4xl text-white"
-            to="contact-us"
-          >
+          <NavLink className="bg-primary-900 hover:bg-primary-700 px-6 py-1.5 rounded-4xl text-white" to="contact-us">
             Contact us
           </NavLink>
         </nav>
