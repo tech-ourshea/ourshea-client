@@ -12,7 +12,7 @@ const Footer = () => {
       <ul className="flex flex-col lg:justify-center lg:gap-24 lg:grid lg:grid-cols-[410px_202px_202px] lg:text-left text-center">
         <li className="lg:block flex flex-col items-center lg:w-auto">
           <Logo className="hidden lg:block w-40 h-23" />
-          <img src="/logo.png" alt="ourshea" className="lg:hidden w-29 h-16" />
+          <img src="/OurShea.svg" alt="ourshea" className="lg:hidden w-29 h-16" />
           <p className="mt-6 max-w-[400px]">We create jobs, support women, and protect the environment</p>
 
           <nav className="flex gap-5 mt-5">

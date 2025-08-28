@@ -45,7 +45,7 @@ const Menubar = () => {
         <Modal isOpen={showMobileMenu} onClose={() => setShowMobileMenu(false)}>
           <div className="flex flex-col items-end mr-5">
             <Link to="/">
-              <img src="/logo.png" alt="ourshea" className="mt-10 w-23 h-13" />
+              <img src="/OurShea.svg" alt="ourshea" className="mt-10 w-23 h-13" />
             </Link>
             <nav className="flex flex-col items-end gap-2.5 mt-4">
               <Link to="">Home</Link>
@@ -57,8 +57,10 @@ const Menubar = () => {
           </div>
         </Modal>
       )}
-      <div className="md:hidden flex justify-end mt-2.5">
-        <IconMenu className="fill-primary-900 mr-5" onClick={() => setShowMobileMenu(true)} />
+      <div className="md:hidden flex justify-between items-center mt-2.5 px-5">
+        <img src="/OurShea.svg" alt="ourshea" className="w-29 h-16" />
+
+        <IconMenu className="fill-primary-900 size-8" onClick={() => setShowMobileMenu(true)} />
       </div>
       <div className="hidden md:flex justify-between items-center px-5.5 lg:px-20 pt-4">
         <Link to={"/"}>
