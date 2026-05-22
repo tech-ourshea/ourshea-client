@@ -140,5 +140,21 @@ Raymond holds a Master's Degree in Mass Communications from the University of Gh
 
 Beyond his professional role, he is deeply committed to sustainability and environmental stewardship. He actively participates in local tree-planting campaigns, champions waste reduction through community education, and supports eco-friendly innovations that promote climate resilience in rural and peri-urban communities. He continues to be a driving force in shaping inclusive, resilient, and community-led development strategies throughout northern Ghana and beyond.`,
   },
+
+  {
+    name: "Godwin Abugbilla",
+    designation: "Chief Operations Officer",
+    img: "/images/our-team/godwin.jpeg",
+
+    bio: `Godwin Abugbilla serves as Chief Marketing Officer (CMO) of OurShea Ghana Ltd, where he leads the company's global marketing strategy, brand development, and customer engagement initiatives. Guided by a strong belief that authentic African products and compelling storytelling can transform global perceptions of the continent, Godwin is committed to positioning OurShea as a premium, ethical, and socially impactful brand in international markets.
+
+A graduate of Ashesi University with a Bachelor of Science in Management Information Systems, Godwin combines expertise in data analytics, systems thinking, and strategic communications to build brands that resonate with both consumers and institutional buyers. At OurShea, he oversees market research, digital marketing, customer acquisition, and strategic partnerships, helping the company expand its reach across the United States, Europe, and Asia.
+
+Godwin also serves as Administrative Coordinator for the Mastercard Foundation Scholars Program at Ashesi University, where he designs and manages systems that support first-generation African students as they transition from university into internships, employment, and social impact careers. His ability to integrate data-driven decision-making with stakeholder engagement and program management has made him a valuable leader in both the nonprofit and private sectors.
+
+His professional experience spans research, operations, and advocacy roles with organizations such as Ecoclime Africa, Melton Foundation, and African Leadership Academy. He has also co-authored published research, reflecting his commitment to evidence-based solutions and innovation.
+
+At OurShea Ghana Ltd, Godwin plays a pivotal role in amplifying the company's mission to empower women shea producers, promote sustainable livelihoods, and deliver world-class organic shea products to customers around the globe. Through his leadership, OurShea continues to strengthen its position as a women-powered, zero-waste African enterprise with a global vision.`,
+  },
 ];
 export default Teams;
