@@ -143,7 +143,7 @@ Beyond his professional role, he is deeply committed to sustainability and envir
 
   {
     name: "Godwin Abugbilla",
-    designation: "Chief Operations Officer",
+    designation: "Chief Marketing Officer ",
     img: "/images/our-team/godwin.jpeg",
 
     bio: `Godwin Abugbilla serves as Chief Marketing Officer (CMO) of OurShea Ghana Ltd, where he leads the company's global marketing strategy, brand development, and customer engagement initiatives. Guided by a strong belief that authentic African products and compelling storytelling can transform global perceptions of the continent, Godwin is committed to positioning OurShea as a premium, ethical, and socially impactful brand in international markets.
